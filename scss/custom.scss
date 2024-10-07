@@ -1,0 +1,92 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$primary: #ffa100;
+//$primary: #ffce22;
+
+//$primary: #1c4587;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Add any additional custom styles after this line
+
+// Body background
+body {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg.svg');
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+// Kural text styling
+.kural-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+  
+  // Base font size for mobile devices
+  font-size: 1rem;
+  
+  // Increase font size for larger screens
+  @include media-breakpoint-up(sm) {
+    font-size: 1.25rem;
+  }
+  
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+}
+
+.kural-line {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Specific styles for different kural types
+.kural-tamil {
+  font-weight: bold;
+}
+
+.kural-transliteration {
+  font-style: italic;
+}
+
+.kural-translation {
+  text-align: justify;
+  hyphens: auto;
+}
+
+// Kural container styling
+.kural-container {
+  
+  @include media-breakpoint-up(xl) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include media-breakpoint-up(xxl) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// ... any other custom styles ...
