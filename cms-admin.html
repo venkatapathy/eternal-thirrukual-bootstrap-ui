@@ -1,100 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eternal Thirukkural- Learning Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
 
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg shadow bg-primary ">
-        <div class="container-sm">
-          <a class="navbar-brand pb-0" href="#">
-            <!-- image without any padding -->
-            <img src="img/cictlogo.svg" alt="Anaadi Logo" width="200" height="50" class="pb-0 rounded d-inline-block align-text-middle" style="padding: 0;">
-            
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eternal Thirukkural- Learning Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg shadow bg-primary ">
+    <div class="container-fluid">
+      <a class="navbar-brand pb-0" href="#">
+        <!-- image without any padding -->
+        <img src="img/cictlogo.svg" alt="Anaadi Logo" width="200" height="50"
+          class="pb-0 rounded d-inline-block align-text-middle" style="padding: 0;">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+        </ul>
+        <!-- -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 border border-right bg-body-tertiary">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Kural Selection</h5>
+            <p class="card-text">
+              Select the Kural based on Iyal, Paal and Kural Number.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Choose Iyal
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Create New Iyal</button>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Choose Paal
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Create New Paal</button>
+
+
+
+
+      </div>
+      <div class="col-9">
+        <div class="card mt-2 p-4">
+          <div class="card-body shadow p-4">
+            <ul class="pagination justify-content-between stretched-pagination">
+              <li>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Choose or Create Language</h6>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Choose Language
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tamil</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-outline-success">Create New Language</button>
               </li>
-             
-            </ul>
-           <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-          </div>
-        </div>
-    </nav>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="kuralSelectionOffcanvas" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Kural Selection</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Navigate to the kural based on Iyal, Paal and Kural Number.
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Choose Iyal
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Choose Paal
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">  
-              Choose Kural Number
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Go to Kural Number" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container-sm">
-        <div class="card mt-2">
-            <div class="card-body shadow p-1 m-0">
-              <h6 class="card-subtitle mb-2 text-body-secondary">Kural Category</h6>
-              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-              <ol class="breadcrumb m-0">
-                <li class="breadcrumb-item" ><a href="#kuralSelectionOffcanvas" data-bs-toggle="offcanvas">Paal Name</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#kuralSelectionOffcanvas" data-bs-toggle="offcanvas">Iyal Name</a></li>
-                <li class="breadcrumb-item active" aria-current="page"><a href="#kuralSelectionOffcanvas" data-bs-toggle="offcanvas">Kural Number</a></li>
-              </ol>
-            </nav>
-            </div>
-        </div>
-    
-    </div>
-    <div class="container kural-container  ">
         <div class="card mt-2">
           <div class="card-header">
             <nav aria-label="Navigate Kurals">
               <ul class="pagination justify-content-between stretched-pagination">
                 <li class="page-item"><a class="mx-3 btn btn-danger" href="#">Previous</a></li>
+                <li>
+                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">Paal Name</li>
+                      <li class="breadcrumb-item">Iyal Name</li>
+                      <li class="breadcrumb-item">Kural Number</li>
+                    </ol>
+                </li>
+                <li></li>
                 <li class="page-item"><a class="mx-3 btn btn-danger" href="#">Next</a></li>
               </ul>
             </nav>
@@ -110,7 +130,7 @@
                   <span class="kural-line">பகவன் முதற்றே உலகு.</span>
                 </div>
               </li>
-                
+
               <li class="list-group-item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
                 <div class="d-flex justify-content-start">
                   <span class="badge text-bg-info">Kural Transliteration in English</span>
@@ -120,13 +140,14 @@
                   <span class="kural-line">pakavaṉ mutaṟṟē ulaku</span>
                 </div>
               </li>
-              
+
               <li class="list-group-item shadow-sm p-3 mb-5 bg-body-tertiary rounded">
                 <div class="d-flex justify-content-start">
                   <span class="badge text-bg-success">Kural Translation in English</span>
                 </div>
                 <div class="kural-text kural-translation">
-                  A is the starting-point of the world of sound: even so is the Ancient one Supreme the starting-point of all that exists.
+                  A is the starting-point of the world of sound: even so is the Ancient one Supreme the starting-point
+                  of all that exists.
                 </div>
               </li>
               <li class="list-group-item">
@@ -135,12 +156,13 @@
                     <div class="loading">
                       <div class="spinner"></div>
                     </div>
-                    <div class="play-pause-btn">  
+                    <div class="play-pause-btn">
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
-                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+                        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"
+                          id="playPause" />
                       </svg>
                     </div>
-                
+
                     <div class="controls">
                       <span class="current-time">0:00</span>
                       <div class="slider" data-direction="horizontal">
@@ -150,11 +172,13 @@
                       </div>
                       <span class="total-time">0:00</span>
                     </div>
-                
+
                     <div class="volume">
                       <div class="volume-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                          <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+                          <path fill="#566574" fill-rule="evenodd"
+                            d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                            id="speaker" />
                         </svg>
                       </div>
                       <div class="volume-controls hidden">
@@ -165,13 +189,14 @@
                         </div>
                       </div>
                     </div>
-                
+
                     <audio crossorigin>
                       <source src="http://localhost:8000/audio/piano2.wav" type="audio/mpeg">
                     </audio>
                   </div>
-                  
-                  <a class="get-it-on-github" href="https://github.com/greghub/green-audio-player" target="_blank">Get it on Github</a>
+
+                  <a class="get-it-on-github" href="https://github.com/greghub/green-audio-player" target="_blank">Get
+                    it on Github</a>
                 </div>
               </li>
             </ul>
@@ -185,8 +210,10 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
     <script>
       var audioPlayer = document.querySelector('.green-audio-player');
       var playPause = audioPlayer.querySelector('#playPause');
@@ -201,25 +228,25 @@
       var currentTime = audioPlayer.querySelector('.current-time');
       var totalTime = audioPlayer.querySelector('.total-time');
       var speaker = audioPlayer.querySelector('#speaker');
-  
+
       var draggableClasses = ['pin'];
       var currentlyDragged = null;
-  
+
       window.addEventListener('mousedown', function (event) {
-  
+
         if (!isDraggable(event.target)) return false;
-  
+
         currentlyDragged = event.target;
         let handleMethod = currentlyDragged.dataset.method;
-  
+
         this.addEventListener('mousemove', window[handleMethod], false);
-  
+
         window.addEventListener('mouseup', () => {
           currentlyDragged = false;
           window.removeEventListener('mousemove', window[handleMethod], false);
         }, false);
       });
-  
+
       playpauseBtn.addEventListener('click', togglePlay);
       player.addEventListener('timeupdate', updateProgress);
       player.addEventListener('volumechange', updateVolume);
@@ -231,21 +258,21 @@
         playPause.attributes.d.value = "M18 12L0 24V0";
         player.currentTime = 0;
       });
-  
+
       volumeBtn.addEventListener('click', () => {
         volumeBtn.classList.toggle('open');
         volumeControls.classList.toggle('hidden');
       })
-  
+
       window.addEventListener('resize', directionAware);
-  
+
       sliders.forEach(slider => {
         let pin = slider.querySelector('.pin');
         slider.addEventListener('click', window[pin.dataset.method]);
       });
-  
+
       directionAware();
-  
+
       function isDraggable(el) {
         let canDrag = false;
         let classes = Array.from(el.classList);
@@ -255,7 +282,7 @@
         })
         return canDrag;
       }
-  
+
       function inRange(event) {
         let rangeBox = getRangeBox(event);
         let rect = rangeBox.getBoundingClientRect();
@@ -271,15 +298,15 @@
         }
         return true;
       }
-  
+
       function updateProgress() {
         var current = player.currentTime;
         var percent = (current / player.duration) * 100;
         progress.style.width = percent + '%';
-  
+
         currentTime.textContent = formatTime(current);
       }
-  
+
       function updateVolume() {
         volumeProgress.style.height = player.volume * 100 + '%';
         if (player.volume >= 0.5) {
@@ -290,7 +317,7 @@
           speaker.attributes.d.value = 'M0 7.667v8h5.333L12 22.333V1L5.333 7.667';
         }
       }
-  
+
       function getRangeBox(event) {
         let rangeBox = event.target;
         let el = currentlyDragged;
@@ -302,45 +329,45 @@
         }
         return rangeBox;
       }
-  
+
       function getCoefficient(event) {
         let slider = getRangeBox(event);
         let rect = slider.getBoundingClientRect();
         let K = 0;
         if (slider.dataset.direction == 'horizontal') {
-  
+
           let offsetX = event.clientX - slider.offsetLeft;
           let width = slider.clientWidth;
           K = offsetX / width;
-  
+
         } else if (slider.dataset.direction == 'vertical') {
-  
+
           let height = slider.clientHeight;
           var offsetY = event.clientY - rect.top;
           K = 1 - offsetY / height;
-  
+
         }
         return K;
       }
-  
+
       function rewind(event) {
         if (inRange(event)) {
           player.currentTime = player.duration * getCoefficient(event);
         }
       }
-  
+
       function changeVolume(event) {
         if (inRange(event)) {
           player.volume = getCoefficient(event);
         }
       }
-  
+
       function formatTime(time) {
         var min = Math.floor(time / 60);
         var sec = Math.floor(time % 60);
         return min + ':' + ((sec < 10) ? ('0' + sec) : sec);
       }
-  
+
       function togglePlay() {
         if (player.paused) {
           playPause.attributes.d.value = "M0 0h6v24H0zM12 0h6v24h-6z";
@@ -350,12 +377,12 @@
           player.pause();
         }
       }
-  
+
       function makePlay() {
         playpauseBtn.style.display = 'block';
         loading.style.display = 'none';
       }
-  
+
       function directionAware() {
         if (window.innerHeight < 250) {
           volumeControls.style.bottom = '-54px';
@@ -368,7 +395,8 @@
           volumeControls.style.left = '-3px';
         }
       }
-  
+
     </script>
-  </body>
+</body>
+
 </html>
